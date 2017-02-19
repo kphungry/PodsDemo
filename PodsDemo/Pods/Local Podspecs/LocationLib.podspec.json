@@ -1,0 +1,56 @@
+{
+  "name": "LocationLib",
+  "version": "0.1.0",
+  "summary": "A short description of LocationLib.",
+  "description": "local pods for baidu map",
+  "homepage": "https://github.com/xxxxx/LocationLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhwj": "sduzhwj@163.com"
+  },
+  "source": {
+    "git": "https://github.com/xxxxx.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LocationLib/Classes/**/*.{h,m,mm}",
+  "resources": "LocationLib/Frameworks/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+  "public_header_files": [
+    "LocationLib/Classes/**/*.h",
+    "LocationLib/Frameworks/**/*.h"
+  ],
+  "frameworks": [
+    "UIKit",
+    "MapKit",
+    "CoreTelephony",
+    "CoreLocation",
+    "QuartzCore",
+    "OpenGLES",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "Security"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "stdc++.6.0.9"
+  ],
+  "vendored_frameworks": [
+    "LocationLib/Frameworks/BaiduMapAPI_Base.framework",
+    "LocationLib/Frameworks/BaiduMapAPI_Map.framework"
+  ],
+  "vendored_libraries": "LocationLib/Libs/*",
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "$(inherited) -ObjC"
+  },
+  "prepare_command": "touch Empty.m && cp LocationLib/Frameworks/BaiduMapAPI_Base.framework/BaiduMapAPI_Base libBaiduMapAPI_Base.a && cp LocationLib/Frameworks/BaiduMapAPI_Map.framework/BaiduMapAPI_Map libBaiduMapAPI_Map.a && cp -r LocationLib/Frameworks/BaiduMapAPI_Map.framework/Resources/mapapi.bundle .",
+  "preserve_paths": [
+    "LocationLib/BaiduMapAPI_Base.framework/BaiduMapAPI_Base",
+    "LocationLib/BaiduMapAPI_Map.framework/BaiduMapAPI_Map",
+    "touch Empty.m && cp LocationLib/Frameworks/BaiduMapAPI_Base.framework/BaiduMapAPI_Base libBaiduMapAPI_Base.a && cp LocationLib/Frameworks/BaiduMapAPI_Map.framework/BaiduMapAPI_Map libBaiduMapAPI_Map.a && cp -r LocationLib/Frameworks/BaiduMapAPI_Map.framework/Resources/mapapi.bundle ."
+  ]
+}

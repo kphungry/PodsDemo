@@ -1,0 +1,19 @@
+PODS:
+  - LocationLib (0.1.0)
+  - SwiftCharts (0.5.1)
+
+DEPENDENCIES:
+  - LocationLib (from `../LocationLib`)
+  - SwiftCharts (~> 0.5)
+
+EXTERNAL SOURCES:
+  LocationLib:
+    :path: ../LocationLib
+
+SPEC CHECKSUMS:
+  LocationLib: 4165aab3bc48ec8ff5e391f78fe45c34dd06498b
+  SwiftCharts: d263289cdc7fc955fef54ae3bc6529f696e69933
+
+PODFILE CHECKSUM: 0986aa835e85cbacd6aaac1ec26b6ee626da87b3
+
+COCOAPODS: 1.2.0
